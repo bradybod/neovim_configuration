@@ -22,8 +22,7 @@ M.dap = {
     ["<leader>cd"] = {
       "<cmd> CMakeDebug <CR>",
       "Run CMakeDebug",
-    }
-    
+    },
   }
 }
 
