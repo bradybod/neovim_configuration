@@ -26,4 +26,14 @@ M.dap = {
   }
 }
 
+M.neo = {
+  plugin = true,
+  n ={
+    ["<leader>gn"] = {
+      "<cmd> Neogen <CR>",
+      "Run NeoGen",
+    },
+  }
+}
+
 return M

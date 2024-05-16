@@ -34,7 +34,10 @@ local plugins = {
   {
     "danymat/neogen",
     event = "VeryLazy",
-    config = true,
+    config ={ 
+      enabled = true,
+      require("core.utils").load_mappings("neo")
+    },
   },
   {
     "Civitasv/cmake-tools.nvim",

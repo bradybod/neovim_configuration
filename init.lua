@@ -26,7 +26,7 @@ require('gen').prompts['1_Explain_Code'] = {
   replace = false
 }
 require('gen').prompts['2_Generate_Docs'] = {
-  prompt = "Generate documentation for the following code block:\n$text\n Use the most popular documentation tool for the language $filetype. If you don't know infer the tool.",
+  prompt = "Generate documentation for the following code block:\n$text\n Use doxygen for c++. Use the @ sign only for doxygen tags. Use comment style \\**.",
   replace = false
 }
 require('gen').prompts['3_Commit_Msg'] = {
@@ -49,4 +49,8 @@ require('gen').prompts['Fix_Code'] = {
   prompt = "Fix the following code. Only ouput the result in format ```$filetype\n...\n```:\n```$filetype\n$text\n```",
   replace = true,
   extract = "```$filetype\n(.-)```"
+}
+require('gen').prompts['Review_Code'] = {
+  prompt = "Review the code in file \n$text\n, please provide any feedback on optimizations, code smells",
+  replace = false,
 }
